@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Happy Time</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="style-templates.css" rel="stylesheet">
+  </head>
+
+  <body>
+      
+
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <form class="navbar-form navbar-right">
+            <form methode="POST" action="identification.php">
+            <!--<div class="form-group">
+              <input type="text" placeholder="Identifiant" class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="password" placeholder="Mot de passe" class="form-control">
+            </div>
+            -->
+            <a class="btn btn-success" href="Connexion.html" role="button">Connexion</a>
+            <a class="btn" href="Inscription.html" role="button">Inscription</a>
+            </form>
+            <form class="navbar-form navbar-left">
+            <a class="btn" href="essai-templates.html" role="button"><img id="iconehome" src="icone-maison.png" alt ="home"/></a>
+           </form>
+         
+        </div><!--/.navbar-collapse -->
+      </div>
+    </nav>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+          
+          <div id="titre1">
+              <h1>Happy time</h1>
+          </div>
+        <p id="titre2">
+            Quittez le quotidien et venez vous distraire!
+        </p>
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-4">
+            <div id='disposition1'>
+                <h3>Casse Noisette</h3>
+                <div id='image'>
+                <p><img id="tailleimg" src="casse-noisette.jpg" alt ="event1"/></p>
+                </div>
+                <p><a class="btn btn-default" href="pageEvenement.html" role="button">Voir l'évènement &raquo;</a></p>
+          </div>
+        </div>
+          
+        <div class="col-md-4">
+            <div id='disposition1'>
+          <h3>Coup de foudre a Besançon</h3>
+          <div id='image'>
+            <p><img id="tailleimg" src="coup-de-foudre.jpg" alt ="event2"/></p>
+          </div>
+            <p><a class="btn btn-default" href="pageEvenement.html" role="button">Voir l'évènement &raquo;</a></p>
+            </div>
+            </div>
+          
+        <div class="col-md-4">
+            <div id='disposition1'>
+          <h3>Stade Toulousain/ASM Clermont-</h3>
+          <div id='image'>
+            <p><img id="tailleimg" src="rugby.jpg" alt ="event3"/></p>
+          </div>
+            <p><a class="btn btn-default" href="pageEvenement.html" role="button">Voir l'évènement &raquo;</a></p>
+            </div>
+       </div>
+      
+            <div class="row">
+        <div class="col-md-4">
+          <h2>Heading</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div>
+              
+            <div class="row">
+        <div class="col-md-4">
+          <h2>Heading</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div>
+      </div>
+            </div>
+      </div>
+    </div>
+
+      <hr>
+<?php
+mysql_close();
+
+?>
+  </body>
+</html>
