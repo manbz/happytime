@@ -1,15 +1,8 @@
-
-  <?php
-$serveur="localhost"; $login="root"; $mdp="root";
-mysql_connect($serveur, $login, $mdp) or die(mysql_error());
-
-if  (mysql_connect($serveur, $login, $mdp))
-{echo 'Connexion réussie';}
-
-else 
-{echo 'Connexion impossible'.mysql_error();}
-
-$base="SiteWeb";
-mysql_select_db($base);
-
+<?php
+$SERVEUR="localhost";
+$LOGIN="root";
+$MDP="root";
+$MABASE="siteweb";
+$CONNEXION=  mysql_connect($SERVEUR, $LOGIN, $MDP);
+mysql_select_db($MABASE);
 ?>

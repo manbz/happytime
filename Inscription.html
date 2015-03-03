@@ -21,6 +21,10 @@
 
   
   <body>
+        <?php
+        require("connect.php");
+        $MonRs= mysql_query($MaRequete, $CONNEXION);
+        ?>
       
           <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
@@ -49,7 +53,7 @@
       
     <div class="container">
 
-      <form class="form-signin">
+      <form class="form-signin" method="post" action="Inscription.php">
         <h1 class="form-signin-heading" id="titre3">Inscrivez vous!</h1>
         
         <h5 class="form-signin-heading" id="titre4">Choisissez vos identifiants</h5>
@@ -71,9 +75,9 @@
         </div>
         <button class="btn btn-success" type="submit">S'inscrire</button>
       </form>
-
     </div> <!-- /container -->
-
+    
+<?php mysql_close($CONNEXION); ?>
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
